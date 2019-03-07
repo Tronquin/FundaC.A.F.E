@@ -1,0 +1,26 @@
+{
+  "name": "fundacafe",
+  "version": "1.0.0",
+  "description": "Pagina Web Fundacafe 2018",
+  "main": "index.html",
+  "scripts": {
+    "sass": "node-sass -w public/scss/ -o public/css/ --recursive",
+    "sass-min": "sass --style compressed public/scss/main.scss public/css/main.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://gitlab.com/prisma_web/fundacioncafe_web_v2_js.git"
+  },
+  "keywords": [
+    "Fundacafe"
+  ],
+  "author": "Prisma",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://gitlab.com/prisma_web/fundacioncafe_web_v2_js/issues"
+  },
+  "homepage": "https://gitlab.com/prisma_web/fundacioncafe_web_v2_js#readme",
+  "dependencies": {
+    "node-sass": "^4.9.4"
+  }
+}

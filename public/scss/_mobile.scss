@@ -1,0 +1,750 @@
+// ####################### Extra Large Devices #######################
+@include mediaXL {
+  header {
+    nav {
+      .nav-items {
+        .nav-option {
+          margin-left: 1.5rem !important;
+          &:nth-child(6) {
+            display: none;
+          }
+        }
+      }
+
+      .hover-heart-green {
+        display: none;
+      }
+
+      .menu-btn {
+        display: block;
+      }
+    }
+  }
+
+  .about-us {
+    flex-flow: column nowrap !important;
+    height: 100vh !important;
+    .s3-p1 {
+      .txt-wrap {
+        line-height: 27px !important;
+        width: 87vw !important;
+        p {
+          text-align: center !important;
+          width: 100vw !important;
+        }
+      }
+    }
+  }
+}
+
+@include mediaXL-Landscape {
+}
+
+// ####################### Large Devices #######################
+@include mediaLg {
+}
+
+@include mediaLg-Landscape {
+  .nav-option {
+    margin-left: 2rem !important;
+  }
+
+  select {
+    background: url(../img/graphics/down-arrow-green.svg) no-repeat 95% white !important;
+    background-size: 1.2rem !important;
+  }
+
+  .morphing-container {
+    .contact-bg {
+      height: 66% !important;
+    }
+  }
+
+  // h1{
+  //   font-size: 2rem;
+  // }
+
+  // main{
+  //   .btn{
+  //     padding: 0.2rem !important;
+  //     width: 25vw !important;
+  //   }
+
+  //   .conceptos{
+  //     .swiper-container{
+  //       p{
+  //         font-size: 0.5rem;
+  //         width: 80%;
+  //         margin-right: 2.5rem;
+  //       }
+  //     }
+
+  //     .btn-container-swip{
+  //       margin-left: -10rem;
+  //       transform: scale(0.5) rotate(90deg);
+  //     }
+  //   }
+  //   .conceptos-slider{
+  //     ul{
+  //       li{
+  //         font-size: 1rem;
+  //         margin-left: 8rem;
+  //       }
+  //     }
+  //   }
+
+  //   .about-us{
+  //     .s3-p1{
+  //       .txt-wrap{
+  //         font-size: 0.5rem;
+  //       }
+  //     }
+  //   }
+  // }
+
+  header {
+    nav {
+      .nav-items {
+        display: none;
+      }
+
+      .hover-heart-green {
+        display: none;
+      }
+
+      .menu-btn {
+        display: block;
+      }
+    }
+
+    // .menu-sidebar {
+    //   display: none;
+    // }
+
+    // .mobile-menu {
+    //   .up-arrow {
+    //     display: block;
+    //   }
+    // }
+  }
+
+  // footer {
+  //   width: 100vw;
+  //   height: 100%;
+
+  //   .footer-items {
+  //     height: unset;
+  //     flex-flow: column nowrap;
+  //     padding: 2rem;
+  //     margin-top: 1rem;
+
+  //     .logo-footer {
+  //       margin-top: 10rem;
+  //     }
+
+  //     h4 {
+  //       text-align: center;
+  //     }
+  //     .divider {
+  //       display: none;
+  //     }
+
+  //     .donar {
+  //       padding-right: 0;
+  //     }
+  //   }
+
+  //   .copyright {
+  //     margin-top: 10rem;
+  //   }
+  // }
+}
+
+// ####################### Medium Devices #######################
+@include mediaMd {
+  header {
+    nav {
+      .nav-items {
+        display: none;
+      }
+
+      .hover-heart-green {
+        display: none;
+      }
+
+      .menu-btn {
+        display: block;
+      }
+    }
+
+    .menu-sidebar {
+      visibility: hidden;
+    }
+
+    .mobile-menu {
+      .up-arrow {
+        display: none;
+      }
+    }
+  }
+
+  h1 {
+    font-size: 2rem !important;
+    text-align: center;
+    margin: 0 !important;
+    margin-bottom: 1rem !important;
+  }
+
+  .btn {
+    padding: 0.5rem !important;
+    font-size: 1rem !important;
+  }
+
+  .swiper-container {
+    #slide-1 {
+      background-position: 65% !important;
+    }
+    .main-pag {
+      left: 0 !important;
+      width: 100% !important;
+      margin-left: 0 !important;
+      transform: rotate(0deg) !important;
+    }
+    .txt-wrap {
+      margin-left: 0 !important;
+      max-width: 100%;
+      align-items: center;
+
+      h1 {
+        font-weight: bold;
+        color: $green-secondary !important;
+        .highlight-blue {
+          color: $green-secondary !important;
+        }
+        .highlight-red {
+          color: $green-secondary !important;
+        }
+        .highlight-green {
+          color: $green-secondary !important;
+        }
+      }
+    }
+  }
+
+  .sm-section {
+    flex-flow: column wrap !important;
+    height: 45vh;
+    justify-content: center !important;
+    img {
+      width: 22% !important;
+    }
+
+    p {
+      text-align: center !important;
+      align-self: center;
+      justify-self: center;
+      margin: 0 !important;
+      width: 70% !important;
+      font-size: 2rem !important;
+      .highlight-blue {
+        color: white !important;
+      }
+    }
+  }
+
+  .about-us {
+    .s3-p1 {
+      .txt-wrap {
+        line-height: 19px !important;
+        p {
+          font-size: 0.8rem !important;
+        }
+      }
+    }
+
+    .bg-section {
+      display: flex !important;
+      flex-flow: column-reverse nowrap;
+      width: 100vw !important;
+      height: 125vh !important;
+
+      .txt-wrap {
+        h2 {
+          text-align: center;
+        }
+        p {
+          text-align: center;
+        }
+      }
+
+      .children {
+        background-position: center !important;
+      }
+    }
+  }
+
+  .conceptos {
+    display: flex !important;
+    .swiper-container {
+      width: 100vw !important;
+      height: 100% !important;
+      display: flex;
+      flex-flow: column nowrap;
+      justify-content: center;
+
+      .swiper-pagination {
+        bottom: 0 !important;
+      }
+      .swiper-slide {
+        margin-top: -5% !important;
+      }
+
+      .concepto-header {
+        display: block !important;
+      }
+
+      .btn-container-swip {
+        display: none !important;
+      }
+
+      h3 {
+        display: block !important;
+        text-align: center;
+      }
+      p {
+        width: 100% !important;
+        margin: auto;
+        line-height: 1.2rem !important;
+      }
+
+      .swiper-pagination {
+        display: initial !important;
+        left: 0 !important;
+        transform: rotate(0deg) !important;
+      }
+    }
+
+    .conceptos-slider {
+      height: 42vh !important;
+      display: flex !important;
+
+      .graphic-concepto-yellow,
+      .graphic-concepto-green {
+        display: none;
+      }
+      ul {
+        display: none;
+      }
+      .concepto-items {
+        display: none;
+      }
+    }
+  }
+
+  .bg-women {
+    max-width: 100vh;
+    align-items: center !important;
+    p {
+      margin-right: 0 !important;
+    }
+  }
+
+  .programa {
+    display: flex !important;
+    flex-flow: column nowrap !important;
+    height: 100% !important;
+    .bg-blue {
+      display: none;
+    }
+    .programa-header {
+      height: 15vh !important;
+      width: 100% !important;
+      h2 {
+        top: 0 !important;
+        right: 0 !important;
+        transform: rotate(0deg) !important;
+        text-align: center;
+        width: 100% !important;
+      }
+    }
+
+    .eventos {
+      justify-content: center !important;
+      height: unset !important;
+      display: flex !important;
+      flex-flow: column wrap;
+      width: 100% !important;
+      .evento {
+        text-align: center;
+        justify-content: center;
+        padding: 1rem !important;
+        height: fit-content !important;
+
+        .txt-wrap {
+          width: 100% !important;
+        }
+      }
+    }
+  }
+
+  .final {
+    .unete {
+      display: flex !important;
+      flex-flow: column-reverse nowrap;
+      height: 100vh !important;
+      .bg-blue-1 {
+        display: block !important;
+        img {
+          display: none;
+        }
+        .txt-wrap {
+          position: unset !important;
+          margin: 0 !important;
+          transform: scale(0.8);
+        }
+      }
+
+      .bg-blue-2 {
+        width: 100%;
+        height: 75%;
+      }
+
+      .bg-blue-3 {
+        display: none;
+      }
+
+      .txt-wrap {
+        display: flex;
+        flex-flow: column wrap;
+        max-width: 100%;
+        max-height: 100%;
+        align-items: center;
+        left: 0 !important;
+        width: 100% !important;
+        justify-content: center;
+        h2 {
+          text-align: center;
+          width: 70%;
+        }
+      }
+    }
+  }
+
+  .morphing-container {
+    display: unset !important;
+    .contact-bg {
+      display: none;
+    }
+    .email-form {
+      width: 100vw !important;
+      ul {
+        height: 100vh !important;
+        background: linear-gradient(
+            rgba(0, 136, 186, 0.95),
+            rgba(0, 136, 186, 0.6)
+          ),
+          url(../img/backgrounds/img_unete_color_3.jpg) no-repeat;
+        background-size: cover;
+        background-position: right center;
+        &:nth-child(1) {
+          h1 {
+            width: 100% !important;
+          }
+        }
+        input[type="text"],
+        input[type="date"],
+        input[type="datetime"],
+        input[type="number"],
+        input[type="search"],
+        input[type="time"],
+        input[type="url"],
+        input[type="email"],
+        textarea,
+        select {
+          padding: 0.8rem !important;
+        }
+      }
+    }
+  }
+
+  footer {
+    height: 100% !important;
+    width: 100% !important;
+    .footer-items {
+      height: unset !important;
+      flex-flow: column nowrap !important;
+      padding: 2rem !important;
+      h4 {
+        text-align: center;
+      }
+      .divider {
+        display: none;
+      }
+
+      .donar {
+        padding-right: 0 !important;
+      }
+    }
+
+    .copyright {
+      margin-right: 0 !important;
+      margin-top: 1rem !important;
+    }
+  }
+}
+
+@include mediaMd-Landscape {
+  header {
+    .menu {
+      justify-content: center !important;
+      .nav-items {
+        .nav-option {
+          display: none;
+        }
+
+        .btn-wrapper {
+          display: none;
+        }
+      }
+
+      .menu-btn {
+        display: block !important;
+      }
+    }
+
+    .menu-sidebar {
+      visibility: hidden;
+    }
+  }
+
+  h1 {
+    font-size: 2rem !important;
+  }
+
+  main {
+    #top {
+      .swiper-container {
+        .btn-wrapper {
+          width: 10rem !important;
+          .btn {
+            padding: 0.5rem !important;
+            font-size: 1rem !important;
+          }
+        }
+
+        .swiper-pagination {
+          bottom: 0 !important;
+        }
+      }
+    }
+
+    .sm-section {
+      justify-content: center !important;
+      p {
+        width: 50% !important;
+      }
+    }
+
+    .about-us {
+      height: 84vh !important;
+      .bg-section {
+        height: 100% !important;
+
+        .children {
+          background-position: center !important;
+        }
+      }
+
+      .s3-p1 {
+        .txt-wrap {
+          h2 {
+            padding-left: 4rem;
+          }
+          p {
+            text-align: center !important;
+            padding-right: 0 !important;
+          }
+        }
+      }
+    }
+
+    .conceptos {
+      .conceptos-slider {
+        height: 100vh !important;
+
+        ul {
+          li {
+            font-size: 1.5rem !important;
+          }
+        }
+
+        .graphic-concepto-green {
+          background-position: -40rem -80rem !important;
+        }
+
+        .graphic-concepto-yellow {
+          background-position: 10rem 13rem !important;
+          width: 100vw !important;
+          height: 100vh !important;
+        }
+
+        .btn-container-swip {
+          margin-left: -10rem !important;
+        }
+        .swiper-container {
+          height: 100vh;
+          p {
+            margin-right: 1rem !important;
+          }
+          .swiper-slide {
+            height: 100vh;
+          }
+        }
+      }
+    }
+
+    .programa {
+      display: flex !important;
+      flex-flow: row wrap !important;
+      .bg-blue {
+        display: none;
+      }
+
+      .programa-header {
+        width: 100% !important;
+        height: 25vh !important;
+        h2 {
+          transform: none !important;
+        }
+      }
+
+      .eventos {
+        display: flex;
+        flex-flow: column nowrap;
+        position: relative;
+        width: 100%;
+        .evento {
+          justify-content: center !important;
+          text-align: center;
+        }
+      }
+    }
+
+    #join {
+      position: relative;
+      height: auto;
+      .unete {
+        display: flex;
+        flex-flow: column-reverse wrap;
+        .bg-blue-3 {
+          display: none !important;
+        }
+        .bg-blue-1 {
+          height: 50vh;
+          display: block !important;
+        }
+      }
+    }
+  }
+
+  footer {
+    width: 100vw !important;
+    height: 100% !important;
+
+    .footer-items {
+      height: unset !important;
+      flex-flow: column nowrap !important;
+      padding: 2rem !important;
+      margin-top: 1rem !important;
+
+      .logo-footer {
+        margin-top: 10rem;
+      }
+
+      h4 {
+        text-align: center !important;
+      }
+      .divider {
+        display: none;
+      }
+
+      .donar {
+        padding-right: 0 !important;
+      }
+    }
+
+    .copyright {
+      margin-top: 10rem !important;
+      margin-right: 0 !important;
+    }
+  }
+}
+
+// ####################### Small Devices #######################
+@include mediaSm {
+  header {
+    nav {
+      .nav-items {
+        .nav-option {
+          display: none;
+        }
+      }
+    }
+
+    .menu-sidebar {
+      visibility: hidden;
+    }
+  }
+
+  .morphing-container {
+    .email-form {
+      ul {
+        padding: 1rem !important;
+        li {
+          margin-bottom: 0 !important;
+        }
+      }
+    }
+  }
+
+  main {
+    .about-us {
+      flex-flow: column nowrap !important;
+      height: 100vh !important;
+      .s3-p1 {
+        .txt-wrap {
+          line-height: 17px !important;
+          width: 100vw !important;
+          p {
+            text-align: center !important;
+            width: 100vw !important;
+            padding-right: 0 !important;
+            padding-left: 0 !important;
+          }
+        }
+      }
+
+      .swiper-button-next {
+        border-radius: 50% !important;
+        top: 1.8rem !important;
+        left: 0 !important;
+        background-size: 0.7rem;
+        width: 1.5rem !important;
+        height: 3.4rem !important;
+      }
+    }
+  }
+
+  #pantalla_donar {
+    line-height: 1.2 !important;
+    padding: 1rem !important;
+
+    h3 {
+      font-size: 1.3rem !important;
+    }
+
+    * {
+      font-size: 0.8rem !important;
+    }
+  }
+}

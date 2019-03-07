@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- 
+    Desarrollado por: Francisco Bejarano & Juan Soto
+    Prisma Agencia Creativa
+-->
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="/public/css/swiper.min.css">
+    <link rel="stylesheet" type="text/css" href="/public/css/all.min.css">
+    <link rel="stylesheet" type="text/css" href="/public/css/main.css">
+    <link rel="stylesheet" type="text/css" href="/public/css/jquery.fancybox.min.css">
+    <link rel="shortcut icon" href="/public/img/favicon.ico" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,600" rel="stylesheet">
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+    <title>CAFE Foundation</title>
+</head>
+
+<body>
+    <!--Navbar-->
+    <header>
+
+        <nav class="menu">
+            <img src="/public/img/fund_cafe_logo.svg" alt="Fundación CAFE" title="Fundación CAFE">
+            <ul class="nav-items">
+                <li>
+                    <a href="#top" class="nav-option">
+                        Home
+                    </a>
+                </li>
+                <li>
+                    <a href="#about" class="nav-option">
+                        About
+                    </a>
+                </li>
+                <li>
+                    <a href="#program" class="nav-option">
+                        What we do
+                    </a>
+                </li>
+                <li>
+                    <a href="#join" class="nav-option">
+                        Join
+                    </a>
+                </li>
+                <li>
+                    <a href="#contact" class="nav-option">
+                        Contact
+                    </a>
+                </li>
+                <li>
+                    <div class="btn-wrapper hover-heart-green">
+                        <a data-morphing id="morphing_donar" data-src="#pantalla_donar" href="javascript:;" class="btn-heart-green">
+                            <p><i class="fas fa-heart corazon"></i> Donate</p>
+                        </a>
+                    </div>
+                </li>
+            </ul>
+
+
+
+            <div class="menu-btn">
+                <div class="btn-line"></div>
+                <div class="btn-line"></div>
+                <div class="btn-line"></div>
+            </div>
+        </nav>
+        <div class="mobile-menu">
+            <ul class="nav-items-mobile">
+                <a class="nav-option-mobile active" href="#top">
+                    Home
+                </a>
+                <a class="nav-option-mobile" href="#about">
+                    About 
+                </a>
+                <a class="nav-option-mobile" href="#program">
+                    What we do
+                </a>
+                <a class="nav-option-mobile" href="#join">
+                    Join
+                </a>
+                <a class="nav-option-mobile" href="#contact">
+                    Contact
+                </a>
+                <div class="btn-wrapper hover-heart-green">
+                    <a data-morphing id="morphing_donar" data-src="#pantalla_donar" href="javascript:;" class="btn-heart-green">
+                        <p><i class="fas fa-heart corazon"></i> Donate</p>
+                    </a>
+                </div>
+            </ul>
+            <div class="up-arrow">
+                <i class="fas fa-arrow-up"></i>
+            </div>
+        </div>
+        <div class="menu-sidebar">
+            <div class="translate">
+                <a href="/index.html">
+                    <h6>ES</h6>
+                </a>
+                <div class="line"></div>
+                <a href="/public/views/en.html">
+                    <h6>EN</h6>
+                </a>
+            </div>
+            <div class="icons">
+                <a href="https://www.facebook.com/fundacafe.ve/?ref=br_rs" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://www.instagram.com/fundacafe_ve/" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="https://twitter.com/fundacafe_ve?lang=es" target="_blank"><i class="fab fa-twitter"></i></a>
+            </div>
+            <div class="up-arrow">
+                <i class="fas fa-arrow-up"></i>
+            </div>
+        </div>
+    </header>
+    <main>
+        <!--Slider-->
+        <section id="top">
+            <div class="swiper-container s1">
+                <div class="swiper-wrapper">
+                    <div id="slide-1" class="swiper-slide">
+                        <div class="txt-wrap">
+                            <h1><span class="highlight-blue">Help us grow<br>with </span><span class="highlight-red">love</span><span
+                                    class="highlight-blue"> and </span><span class="highlight-green">Faith</span></h1>
+                            <div class="btn-wrapper hover-blue">
+                                <a class="btn" href="#about">
+                                    <p>About us</p>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="slide-2" class="swiper-slide">
+                        <div class="txt-wrap">
+                            <h1><span class="highlight-red">Hope</span> and <br><span class="highlight-blue">quality</span>
+                                of
+                                <span class="highlight-green">life</span></h1>
+                            <div class="btn-wrapper hover-blue">
+                                <a class="btn" href="#program">
+                                    <p>What we do</p>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="slide-3" class="swiper-slide">
+                        <div class="txt-wrap">
+                            <h1><span class="highlight-red">Let's make</span> a <br><span class="highlight-blue">better</span>
+                                <span class="highlight-green">society</span></h1>
+                            <div class="btn-wrapper hover-blue">
+                                <a class="btn" href="#join">
+                                    <p>Join</p>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="slide-4" class="swiper-slide">
+                        <div class="txt-wrap">
+                            <h1><span class="highlight-green">We're counting </span><span class="highlight-blue">on you <br><br></span></h1>
+                            <div class="btn-wrapper hover-blue">
+                                <a class="btn" href="#contact">
+                                    <p>Contact</p>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-pagination main-pag"></div>
+            </div>
+            <div class="swiper-pagination"></div>
+        </section>
+        <!--Quienes Somos-->
+        <!--El amor se contagia-->
+        <div class="sm-section">
+            <div class="sm-section-graphic"></div>
+            <img src="/public/img/fund_cafe_isotipo.svg" alt="Fundacafe Logo" title="Fundacafe Logo">
+            <p><span class="highlight-blue">Love is in the air</span></p>
+        </div>
+        <section class="about-us swiper-container" id="about">
+            <!--Quienes somos Texto / Imagen-->
+            <div class="s3-p1 swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="txt-wrap swiper-slide">
+                        <h2><span class="highlight-blue">Who are we?</span></h2>
+                        <p>The C.A.F.E Foundation is a non-profit association that unites friends, professionals, volunteers and the aid of public
+                        and private institutions to provide help to children and elderly people with an ambient of faith and love.</p>
+                    </div>
+                    <div class="txt-wrap swiper-slide">
+                        <h2><span class="highlight-blue">Ethics</span></h2>
+                        <p class="center">Our personal conduct consists in act properly.</p>
+                    </div>
+                    <div class="txt-wrap swiper-slide">
+                        <h2><span class="highlight-blue">Honesty</span></h2>
+                        <p>Integrity, sincerity and transparency is our way to be, feel and act till accomplish the harmony between what we say
+                        and do.</p>
+                    </div>
+                    <div class="txt-wrap swiper-slide">
+                        <h2><span class="highlight-blue">Solidarity</span></h2>
+                        <p>Identification, empathy and cooperation with our colleagues, the community and society in general.</p>
+                    </div>
+                    <div class="txt-wrap swiper-slide">
+                        <h2><span class="highlight-blue">Responsibility</span></h2>
+                        <p class="center">Making possible our compromise to work and help people.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="s3-p2 swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="children ch1 swiper-slide"></div>
+                    <div class="children ch2 swiper-slide"></div>
+                    <div class="children ch3 swiper-slide"></div>
+                    <div class="children ch4 swiper-slide"></div>
+                    <div class="children ch5 swiper-slide"></div>
+                </div>
+            </div>
+        </section>
+        <!--Vision, Mision, Valores-->
+        <section class="conceptos" id="concept">
+            <!-- Vision, Mision, Valores Hotizontal Slider-->
+            <div class="conceptos-slider">
+                <!---->
+                <ul class="graphic-concepto-green">
+                    <li id="s-1"> <span class="chevron"></span>Vision</li>
+                    <div class="barra b-1"></div>
+                    <li id="s-2"> <span class="chevron"></span>Mission</li>
+                    <div class="barra b-2"></div>
+                    <li id="s-3"> <span class="chevron"></span>Objective</li>
+                    <div class="barra b-3"></div>
+                </ul>
+                <!---->
+                <div class="swiper-container s2">
+                    <div class="graphic-concepto-yellow"></div>
+                    <div class="swiper-wrapper">
+                        <div id="vision" class="swiper-slide vision">
+                            <h3 class="concepto-header"><span class="highlight-green">Vision</span></h3>
+                            <p>Strengthen our mission with the union, talent and creativity of more friends, professionals, volunteers, public and
+                            private institutions, with their economic and intellectual support we’ll be able to make the lives of tons of people
+                            better.</p>
+                        </div>
+                        <div id="mision" class="swiper-slide mision">
+                            <h3 class="concepto-header"><span class="highlight-green">Misión</span></h3>
+                            <p>Build a better quality of life for the people through aid programs to bring support, tools and resources for economic,
+                            social and self development.</p>
+                        </div>
+                        <div id="objetivo" class="swiper-slide objetivo">
+                            <h3 class="concepto-header"><span class="highlight-green">Objetivo</span></h3>
+                            <p>Join forces in benefit of all who needs help in order to give them better quality of life through economic, educative,
+                            recreative help thanks to a multidisciplinary team able to make contributions to their development from an ambient of
+                            love and faith.</p>
+                        </div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                    <div class="btn-container-swip">
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Sembramos Semillas para el futuro -->
+        <div class="bg-women">
+            <p>We plant the seeds</p>
+            <p>of the future</p>
+        </div>
+        <!-- programa de Eventos -->
+        <section class="programa" id="program">
+            <!-- programa de eventos sidebar-->
+            <div class="programa-header">
+                <h2>What we do</h2>
+            </div>
+            <div class="eventos">
+                <div class="evento ev1">
+                    <div class="txt-wrap">
+                        <h3>
+                            <span class="highlight-blue">Visit to the orphanage</span>
+                        </h3>
+                        <p>
+Our childs are the seeds of the future, giving them our support is the hope for a society filled with love and faith.
+
+                        </p>
+                    </div>
+                </div>
+                <div class="evento ev2">
+                    <div class="txt-wrap">
+                        <h3>
+                            <span class="highlight-blue">Visit to the nursing home</span>
+                        </h3>
+                        <p>
+Elderly people are like children, they need love and care, Our support is the hope for a better quality of life in an
+environment of faith and love.
+                        </p>
+                    </div>
+                </div>
+                <div class="evento ev3">
+                    <div class="txt-wrap">
+                        <h3>
+                            <span class="highlight-blue">Events</span>
+                        </h3>
+                        <p>The events made by the foundation are the point of encounter for wellbeing, enrichment, quality of life, faith and
+                        love.
+
+                        </p>
+                    </div>
+                </div>
+                <div class="evento ev4">
+                    <div class="txt-wrap">
+                        <h3>
+                            <span class="highlight-blue">Empowerment of the women</span>
+                        </h3>
+                        <p>The biggest social commitment is with the family and women are who represent the bases of a home, always giving a
+                        sensation of wellbeing for all the members of the family building an environment of faith and love.
+                        </p>
+                    </div>
+                </div>
+                <div class="evento ev5">
+                    <div class="txt-wrap">
+                        <h3>
+                            <span class="highlight-blue">Sport Programs</span>
+                        </h3>
+                        <p>Sport is a set of disciplines that we develop according to the category with the end of motivating a life in movement
+                        and a wholesome body, mind and spirit.
+                        </p>
+                    </div>
+                </div>
+                <div class="evento ev6">
+                    <div class="txt-wrap">
+                        <h3>
+                            <span class="highlight-blue">Social Aids</span>
+                        </h3>
+                        <p>
+                            In search of a better life, we encounter sometimes obstacles in our way we cannot go through without aid, we want to
+                            help people when they go through these obstacles giving benefits and compensations to anyone who needs them. Many are
+                            the shortcomings were we’re going to plant seeds that will grow and bear fruit.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Unetenos -->
+        <section class="final" id="join">
+            <div class="unete">
+                <div class="bg-blue-1">
+                    <div class="blue-back"></div>
+                    <div class="txt-wrap">
+                        <h2><span class="highlight-blue">Do you want to be<br>part of our team?</span></h2>
+                        <div class="btn-wrapper hover-red">
+                            <a data-morphing id="morphing" data-src="#morphing_content" href="javascript:;" class="btn-red">
+                                <p><i class="fas fa-thumbs-up corazon"></i> JOIN</p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-blue-2"></div>
+                <div class="bg-blue-3"></div>
+            </div>
+
+            <div id="morphing_content" style="display: none">
+                <div class="morphing-container">
+                    <div class="bg-green"></div>
+                    <div class="contact-bg"></div>
+                    <form id="email-form" accept-charset="UTF-8" action="https://usebasin.com/f/b8c5d298b391" enctype="multipart/form-data"
+                        method="POST">
+                        <ul>
+                            <li>
+                                <h1><span class="highlight-green">Join us</span></h1>
+                                <h3><span class="highlight-white">Thanks for becoming part of our team</span></h3>
+                            </li>
+                            <li>
+                                <div class="double-field">
+                                    <input type="text" name="name" id="name" placeholder="Nombre" required />
+                                    <div></div>
+                                    <input type="text" name="lastname" id="lastname" placeholder="Apellido" required />
+                                </div>
+                            </li>
+                            <li>
+                                <input type="text" name="phone" class="field-long" id="phone" placeholder="Teléfono"
+                                    required />
+                            </li>
+                            <li>
+                                <input type="email" name="email" class="field-long" id="email" placeholder="E-mail"
+                                    required />
+                            </li>
+                            <li>
+                                <label for="servicio">What is your profession?</label>
+                                <select name="servicio" id="field-select" id="servicio">
+                                    <option value="Ingeniero">Engineer</option>
+                                    <option value="Abogado">Lawyer</option>
+                                    <option value="Contador">Accounting</option>
+                                    <option value="Educador">Teacher</option>
+                                    <option value="Medico">Medic</option>
+                                    <option value="Otro">Other</option>
+                                </select>
+                            </li>
+                            <li>
+                                <textarea name="mensaje" id="mensaje" class="field-long field-textarea" maxlength="500"
+                                    placeholder="Mensaje"></textarea>
+                                <h4 class="word-counter">0 / 500</h4>
+                            </li>
+                            <li>
+                                <div class="g-recaptcha" data-sitekey="6Lew3SMUAAAAAJ82QoS7gqOTkRI_dhYrFy1f7Sqy">
+                            </li>
+                            <li>
+                                <button class="btn-green-form" type="submit"><i class="fas fa-envelope"></i> Send</button>
+                            </li>
+                        </ul>
+                    </form>
+                </div>
+        </section>
+
+        <section id="pantalla_donar" class="donativo hidden">
+            <div class="data_container">
+                <h3 class="highlight-white">Thanks for supporting us</h3>
+                <p>
+                    Banco Sofitasa Cta Cte. 0137-0007-96-0000130601
+                    <br>
+                    Ayudame a crecer con amor y fe RIF J-411785873
+                    <br>
+                    Tlf. +58 414-5835524
+                </p>
+                <h3 class="highlight-green">Contact us if you have any doubts</h3>
+                <div class="link_wrapper">
+                    <a class="info" href="https://wa.me/584145835524" target="_blank">
+                        <i class="fab fa-whatsapp"></i>
+                    </a>
+                    <a class="info" href="https://www.facebook.com/fundacafe.ve/?ref=br_rs" target="_blank">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a class="info" href="https://www.instagram.com/fundacafe_ve/" target="_blank">
+                        <i class=" fab fa-instagram"></i>
+                    </a>
+                </div>
+                <a class="e_mail" href="https://mail.google.com" target="_blank">
+                    <i class="fas fa-envelope"></i>
+                    <p>info@fundacafe.org</p>
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <footer id="contact">
+        <ul class="footer-items">
+            <li class="logo-footer">
+                <img src="/public/img/fund_cafe_logo_blanco.svg" alt="">
+            </li>
+            <li class="divider">
+                <div class="divider-line"></div>
+            </li>
+            <li class="contacto">
+                <h4>Contact</h4>
+                <a class="phone" href="https://wa.me/584145835524" target="_blank">
+                    <i class="fab fa-whatsapp"></i>
+                    <p>+58 414-5835524</p>
+                </a>
+                <a class="email" href="https://mail.google.com" target="_blank">
+                    <i class="fas fa-envelope"></i>
+                    <p>info@fundacafe.org</p>
+                </a>
+            </li>
+            <li class="icons">
+                <h4>Follow us</h4>
+                <a href="https://www.facebook.com/fundacafe.ve/?ref=br_rs" target="_blank">
+                    <i class="fab fa-facebook-f  icon-m"></i>
+                </a>
+                <a href="https://www.instagram.com/fundacafe_ve/" target="_blank">
+                    <i class=" fab fa-instagram icon-m"></i>
+                </a>
+                <a href="https://twitter.com/fundacafe_ve?lang=es" target="_blank">
+                    <i class="fab fa-twitter icon-m"></i>
+                </a>
+            </li>
+            <li class="donar">
+                <h4>Support us</h4>
+                <div class="btn-wrapper hover-heart-blue">
+                    <a data-morphing id="morphing_donar" data-src="#pantalla_donar" href="javascript:;" class="btn-heart-blue">
+                        <p><i class="fas fa-heart corazon"></i> Donate</p>
+                    </a>
+                </div>
+            </li>
+        </ul>
+
+        <h4 class="copyright">&copy copyright 2018. Fundación C.A.F.E. (Ayúdame a Crecer con Amor y Fe). J
+            411785873 | Designed and developed by <a href="http://prismaagencia.com" class="prisma" target="_blank">Prisma
+                Agencia
+                Creativa</a>.</h4>
+
+    </footer>
+
+
+    <script type="text/javascript" src="/public/js/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="/public/js/swiper.min.js"></script>
+    <script type="text/javascript" src="/public/js/all.min.js"></script>
+    <script type="text/javascript" src="/public/js/main.js"></script>
+    <script type="text/javascript" src="/public/js/jquery.fancybox.min.js"></script>
+</body>
+
+</html>

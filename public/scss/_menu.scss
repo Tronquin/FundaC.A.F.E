@@ -1,0 +1,307 @@
+header {
+  position: fixed;
+  z-index: 9999;
+  height: 6rem;
+  img {
+    justify-self: center;
+    align-self: center;
+  }
+  nav {
+    background: white;
+    width: 100vw;
+    height: 6.5rem;
+    z-index: 10;
+    display: flex;
+    justify-content: space-around;
+
+    .btn-heart-green {
+      text-decoration: none;
+      color: white;
+      width: 8rem;
+      height: 3rem;
+      background: $green-primary;
+      border: 1px solid $green-primary;
+      border-radius: 50px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1rem;
+      .corazon {
+        margin-right: 1rem;
+        animation: heart 1s infinite forwards;
+      }
+
+      p {
+        margin: 0;
+        z-index: 100;
+        padding: 1rem;
+      }
+    }
+
+    .hover-heart-green {
+      margin-left: 1rem;
+      width: 8rem;
+      height: 3rem;
+      display: flex;
+    }
+
+    .hover-heart-green::before {
+      background-color: $blue-primary;
+    }
+
+    .hover-heart-green::after {
+      background-color: $blue-secondary;
+    }
+
+    .hover-heart-green::after,
+    .hover-heart-green::before {
+      width: 130%;
+    }
+
+    .nav-items {
+      list-style: none;
+      display: flex;
+      flex-flow: row wrap;
+      padding: 0;
+      margin: 0;
+      max-width: 100%;
+      max-height: 100%;
+      width: 54%;
+      height: 100%;
+      justify-content: space-evenly;
+      align-items: center;
+
+      .nav-option {
+        font-size: 1rem;
+        color: $black-complementary;
+        transition: color 0.5s;
+        text-decoration: none;
+        cursor: pointer;
+        &:hover {
+          color: $blue-primary;
+        }
+      }
+    }
+
+    .menu-btn {
+      z-index: 6;
+      top: 2.5rem;
+      cursor: pointer;
+      transition: all 0.5s ease-out;
+      align-self: center;
+      display: none;
+
+      .btn-line {
+        width: 28px;
+        height: 2px;
+        margin: 0 0 5px 0;
+        background: $blue-primary;
+        transition: all 0.5s ease-out;
+      }
+
+      // Rotate Into X With Menu Lines
+      &.close {
+        transform: rotate(180deg);
+
+        .btn-line {
+          // Line 1 - Rotate
+          &:nth-child(1) {
+            transform: rotate(45deg) translate(4px, 3px);
+          }
+
+          // Line 2 - Hide
+          &:nth-child(2) {
+            opacity: 0;
+          }
+
+          // Line 3 - Rotate
+          &:nth-child(3) {
+            transform: rotate(-45deg) translate(7px, -6px);
+          }
+        }
+      }
+    }
+  }
+  .menu-sidebar {
+    background: $blue-primary;
+    height: 100vh;
+    width: 70px;
+    position: fixed;
+    z-index: 9999;
+    right: 0;
+    top: 0;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    justify-content: space-between;
+
+    .up-arrow {
+      cursor: pointer;
+      margin-bottom: 1rem;
+
+      svg {
+        border: 1px solid $red-primary;
+        padding: 1rem;
+        border-radius: 50px;
+        background: $red-primary;
+        transition: all 0.5s;
+
+        path {
+          fill: white;
+          transition: fill 0.2s;
+        }
+
+        &:hover {
+          background-color: $red-secondary;
+          border-color: $red-secondary;
+        }
+      }
+    }
+
+    .icons {
+      display: flex;
+      flex-flow: column wrap;
+      text-align: center;
+      a {
+        .svg-inline--fa {
+          height: 2em !important;
+        }
+        svg {
+          path {
+            transition: all 0.5s ease;
+            fill: white !important;
+          }
+        }
+
+        &:hover {
+          svg {
+            path {
+              fill: $red-primary !important;
+            }
+          }
+        }
+      }
+    }
+
+    .translate {
+      position: relative;
+      top: 2.5rem;
+      .line {
+        border: 0.5px solid white;
+        width: 80%;
+        position: relative;
+        left: 1px;
+      }
+
+      a {
+        text-decoration: none;
+        color: white;
+        text-align: center;
+        transition: color 0.5s;
+
+        h6 {
+          margin: 0;
+        }
+
+        &:hover {
+          color: $red-primary;
+        }
+      }
+    }
+  }
+  .mobile-menu {
+    background: $blue-primary;
+    transform: translateY(-101%);
+    position: relative;
+    z-index: -1;
+    transition: transform 0.5s ease-in-out;
+    .btn-heart-green {
+      text-decoration: none;
+      color: white;
+      width: 8rem;
+      background: $green-primary;
+      border-radius: 50px;
+      padding: 1rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1rem;
+      .corazon {
+        margin-right: 0.5rem;
+        animation: heart 1s infinite forwards;
+      }
+
+      p {
+        margin: 0;
+        z-index: 100;
+      }
+    }
+
+    .hover-heart-green {
+      margin-top: 0.5rem;
+      width: 8rem;
+      height: 3rem;
+      display: flex;
+      align-self: center;
+    }
+
+    .hover-heart-green::before {
+      background-color: $blue-primary;
+    }
+
+    .hover-heart-green::after {
+      background-color: $blue-secondary;
+    }
+
+    .hover-heart-green::after,
+    .hover-heart-green::before {
+      width: 130%;
+    }
+    .up-arrow {
+      position: fixed;
+      top: 67rem;
+      right: 2rem;
+      cursor: pointer;
+      display: none;
+
+      svg {
+        border: 1px solid $red-primary;
+        padding: 1rem;
+        border-radius: 50px;
+        background: $red-primary;
+
+        path {
+          fill: white;
+          transition: fill 0.2s;
+        }
+      }
+    }
+
+    .nav-items-mobile {
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-flow: column wrap;
+      justify-content: center;
+      align-content: center;
+      width: 100%;
+      height: 55vh;
+
+      .nav-option-mobile {
+        text-decoration: none;
+        color: white;
+        text-align: center;
+        padding: 1rem;
+        text-transform: uppercase;
+        font-weight: bold;
+      }
+    }
+  }
+
+  .active {
+    color: $blue-secondary !important;
+  }
+  .appear {
+    transform: translateY(0);
+  }
+}

@@ -1,0 +1,71 @@
+//--------Web Page Colors---------//
+$green-primary: #8cc63e;
+$yellow-primary: #fdb813;
+$blue-primary: #0088ba;
+$red-primary: #d0343a;
+$grey-complementary: #9b9b9b;
+$black-complementary: #4a4a4a;
+$green-secondary: #a9f04a;
+$yellow-secondary: #ffca4c;
+$blue-secondary: #00aff0;
+$red-secondary: #fe424a;
+
+//------------Mixins-----------------//
+@mixin ease-in-out($time: 0.5s, $type: ease-in-out) {
+  transition: all $time $type;
+}
+
+//------------Functions-------------//
+@function set-text-color($color) {
+  @if (lightness($color) > 40) {
+    @return #000;
+  } @else {
+    @return #fff;
+  }
+}
+
+// ####################### Media Queries #######################
+// Small Devices
+@mixin mediaSm {
+  @media screen and (max-width: 500px) and (orientation: portrait) {
+    @content;
+  }
+}
+@mixin mediaSm-Landscape {
+  @media screen and (max-width: 500px) and (orientation: landscape) {
+    @content;
+  }
+}
+// Medium Devices
+@mixin mediaMd {
+  @media screen and (max-width: 768px) and (orientation: portrait) {
+    @content;
+  }
+}
+@mixin mediaMd-Landscape {
+  @media screen and (max-width: 768px) and (orientation: landscape) {
+    @content;
+  }
+}
+// Large Devices Portrait
+@mixin mediaLg {
+  @media screen and (min-width: 769px) and (max-width: 1170px) and (orientation: portrait) {
+    @content;
+  }
+}
+@mixin mediaLg-Landscape {
+  @media screen and (min-width: 769px) and (max-width: 1170px) and (orientation: landscape) {
+    @content;
+  }
+}
+// Extra Large Devices Portrait
+@mixin mediaXL {
+  @media screen and (min-width: 1171px) and (orientation: portrait) {
+    @content;
+  }
+}
+@mixin mediaXL-Landscape {
+  @media screen and (min-width: 1171px) and (orientation: landscape) {
+    @content;
+  }
+}
